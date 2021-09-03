@@ -9,28 +9,28 @@ namespace ProjectCars
 {
      public class CarCRUD
     {
-        private static string path = @"C:\Json Store\Cars.json";
+        //private static string path = @"C:\Json Store\Cars.json";
 
         public static List<Car> GetCars()
         {
-            List<Car> cars = new List<Car>
+            var cars = new List<Car>
             {
                 new Car
                 {
-                    id = "AA0456AA",
-                    model = "Fiat",
-                    doorsQuantity = 5,
-                    color = "Verde",
-                    gearBox = true
+                    Id = "AA0456AA",
+                    Model = "Fiat",
+                    DoorsQuantity = 5,
+                    Color = "Verde",
+                    IsManualTransmition = true
                 },
 
                 new Car
                 {
-                    id = "BB0156VV",
-                    model = "Peugeot",
-                    doorsQuantity = 3,
-                    color = "Azul",
-                    gearBox = true
+                    Id = "BB0156VV",
+                    Model = "Peugeot",
+                    DoorsQuantity = 3,
+                    Color = "Azul",
+                    IsManualTransmition = true
                 },
             };
 
@@ -44,7 +44,7 @@ namespace ProjectCars
             return null;
         }
 
-        public Car Get(int id)
+        public Car Get(int Id)
         {
             return null;
         }
@@ -54,7 +54,7 @@ namespace ProjectCars
             return null;
         }
 
-        public void Delete(int id)
+        public void Delete(int Id)
         {
 
         }

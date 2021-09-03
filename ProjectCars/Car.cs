@@ -9,11 +9,11 @@ namespace ProjectCars
 {
     public class Car
     {
-        public string id { get; set; }
-        public string model { get; set; }
-        public int doorsQuantity { get; set; }
-        public string color { get; set; }
-        public bool gearBox { get; set; }
+        public string Id { get; set; }
+        public string Model { get; set; }
+        public int DoorsQuantity { get; set; }
+        public string Color { get; set; }
+        public bool IsManualTransmition { get; set; }
 
     }
 }

@@ -12,14 +12,14 @@ namespace ProjectCars
 
             var carAdd1 = new Car
             {
-                id = "CU9856BA",
-                model = "Renault",
-                doorsQuantity = 4,
-                color = "Rojo",
-                gearBox = false
+                Id = "CU9856BA",
+                Model = "Renault",
+                DoorsQuantity = 4,
+                Color = "Rojo",
+                IsManualTransmition = false
             };
 
-            CarCRUD runningProgram = new CarCRUD();
+            var runningProgram = new CarCRUD();
 
             //runningProgram.Create(carAdd1);
 
