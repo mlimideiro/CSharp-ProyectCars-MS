@@ -7,6 +7,15 @@ using System.Xml.Schema;
 
 namespace ProjectCars
 {
+    public enum BrandCar
+    {
+        Fiat,
+        Ford,
+        Chevrolet,
+        Peugeot,
+        Renault,
+        Volkswagen
+    }
     public class Car
     {
         public string Id { get; set; }
