@@ -10,24 +10,37 @@ namespace ProjectCars
         static void Main(string[] args)
         {
 
-            var carAdd1 = new Car
+            var Crud = new CarCRUD();
+
+            var carNew = new Car()
             {
-                Id = "CU9856BA",
-                Model = "Renault",
-                DoorsQuantity = 4,
-                Color = "Rojo",
-                IsManualTransmition = false
+                Id = "CC0123DD",
+                Model = "Peugeot",
+                DoorsQuantity = 5,
+                Color = "Blanco",
+                IsManualTransmission = true
             };
 
-            var runningProgram = new CarCRUD();
+            Crud.Create(carNew);
+            Console.WriteLine(Crud.Get("CC0123DD").Model);
+            Crud.Delete("CC0123DD");
 
-            //runningProgram.Create(carAdd1);
+            var carUpd = new Car()
+            {
+                Id = "AA0456AA",
+                Model = "Peugeot",
+                DoorsQuantity = 5,
+                Color = "Azul",
+                IsManualTransmission = true
+            };
 
-            
+            Crud.Update(carUpd);
 
-            
 
-            
+
+
+
+
 
 
         }

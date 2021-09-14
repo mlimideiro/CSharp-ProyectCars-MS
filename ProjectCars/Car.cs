@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
 
 namespace ProjectCars
 {
@@ -18,11 +13,11 @@ namespace ProjectCars
     }
     public class Car
     {
-        public string Id { get; set; }
-        public string Model { get; set; }
+        public String Id { get; set; }
+        public String Model { get; set; }
         public int DoorsQuantity { get; set; }
-        public string Color { get; set; }
-        public bool IsManualTransmition { get; set; }
+        public String Color { get; set; }
+        public bool IsManualTransmission { get; set; }
 
     }
 }
